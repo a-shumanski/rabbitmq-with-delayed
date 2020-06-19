@@ -1,0 +1,10 @@
+name: 'RabbitMQ with delayed plugin'
+description: 'RabbitMQ container with delayed plugin'
+author: 'Anton Shumanski'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'check-circle'
+  color: 'green'
