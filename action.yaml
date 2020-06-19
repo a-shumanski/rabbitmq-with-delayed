@@ -4,7 +4,19 @@ author: 'Anton Shumanski'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
 branding:
-  icon: 'check-circle'
-  color: 'green'
+  icon: 'database'
+  color: 'orange'
+inputs:
+  RABBITMQ_DEFAULT_USER:
+    description: 'User of RabbitMQ'
+    required: false
+    default: ''
+  RABBITMQ_DEFAULT_PASS:
+    description: 'Password of RabbitMQ'
+    required: false
+    default: ''
+  RABBITMQ_DEFAULT_VHOST:
+    description: 'the rabbitmq vhost option'
+    required: false
+    default: ''
