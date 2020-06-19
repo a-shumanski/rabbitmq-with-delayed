@@ -1,5 +1,5 @@
-FROM rabbitmq:management
+FROM docker:stable
 
-ADD rabbitmq_delayed_message_exchange-3.8.0.ez $RABBITMQ_HOME/plugins/rabbitmq_delayed_message_exchange-3.8.0.ez
-
-RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

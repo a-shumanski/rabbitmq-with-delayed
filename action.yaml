@@ -8,15 +8,23 @@ branding:
   icon: 'database'
   color: 'orange'
 inputs:
-  RABBITMQ_DEFAULT_USER:
-    description: 'User of RabbitMQ'
+  rabbitmq version:
+    description: 'Version of RabbitMQ to use'
+    required: false
+    default: 'latest'
+  host port:
+    description: 'The port of host'
+    required: false
+    default: 5672
+  rabbitmq user:
+    description: 'the rabbitmq username'
+    required: false
+    default: 'user'
+  rabbitmq password:
+    description: 'the rabbitmq password'
     required: false
     default: ''
-  RABBITMQ_DEFAULT_PASS:
-    description: 'Password of RabbitMQ'
-    required: false
-    default: ''
-  RABBITMQ_DEFAULT_VHOST:
+  rabbitmq vhost:
     description: 'the rabbitmq vhost option'
     required: false
     default: ''
